@@ -209,15 +209,21 @@ body {
 
 .header {
     position: relative;
+
     border-bottom: 3px double var(--border);
+
     padding-bottom: 18px;
+
     margin-bottom: 25px;
 }
 
 .foundation {
     font-family: "Special Elite", monospace;
+
     font-size: 13px;
+
     letter-spacing: 3px;
+
     color: var(--ink-faded);
 }
 
@@ -225,10 +231,13 @@ body {
     float: right;
 
     color: var(--red);
+
     border: 2px solid var(--red);
+
     padding: 5px 12px;
 
     font-size: 12px;
+
     letter-spacing: 2px;
 
     transform: rotate(2deg);
@@ -238,7 +247,9 @@ body {
     margin: 12px 0 0;
 
     font-family: "Caveat", cursive;
+
     font-size: clamp(42px, 7vw, 72px);
+
     font-weight: 700;
 
     color: #263337;
@@ -250,7 +261,9 @@ body {
 
 .subtitle {
     font-family: "Caveat", cursive;
+
     font-size: 24px;
+
     color: var(--blue-ink);
 
     margin-top: -8px;
@@ -264,9 +277,11 @@ body {
     position: relative;
 
     margin: 30px 5px 35px;
+
     padding: 20px 30px;
 
     border-left: 5px solid var(--red);
+
     border-bottom: 1px dashed var(--border);
 
     background: rgba(190,198,195,.18);
@@ -278,19 +293,24 @@ body {
     content: "\"";
 
     position: absolute;
+
     left: 8px;
     top: -17px;
 
     font-family: Georgia, serif;
+
     font-size: 70px;
 
     color: var(--red-faded);
+
     opacity: .45;
 }
 
 .quote-text {
     font-family: "Caveat", cursive;
+
     font-size: 30px;
+
     line-height: 1.15;
 
     color: #273c42;
@@ -302,6 +322,7 @@ body {
     margin-top: 8px;
 
     font-family: "Caveat", cursive;
+
     font-size: 18px;
 
     color: var(--ink-faded);
@@ -311,12 +332,13 @@ body {
 
 /* =========================================================
    FILE GRID
+   UPDATED FOR 293.49 × 543.73 IMAGE
 ========================================================= */
 
 .profile-grid {
     display: grid;
 
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 320px 1fr;
 
     gap: 35px;
 
@@ -325,10 +347,13 @@ body {
 
 /* =========================================================
    PHOTOGRAPH / APPEARANCE
+   UPDATED IMAGE DIMENSIONS
 ========================================================= */
 
 .appearance {
     position: relative;
+
+    width: 320px;
 
     padding: 12px;
 
@@ -338,7 +363,8 @@ body {
 
     transform: rotate(-1.2deg);
 
-    box-shadow: 3px 4px 0 rgba(60,65,63,.12);
+    box-shadow:
+        3px 4px 0 rgba(60,65,63,.12);
 }
 
 .appearance::before {
@@ -347,6 +373,7 @@ body {
     display: block;
 
     font-family: "Special Elite", monospace;
+
     font-size: 10px;
 
     letter-spacing: 1px;
@@ -357,12 +384,15 @@ body {
 }
 
 .appearance-image {
-    width: 100%;
-    aspect-ratio: 3 / 4;
+    width: 293.49px;
+
+    height: 543.73px;
 
     display: block;
 
     object-fit: cover;
+
+    object-position: center;
 
     background:
         linear-gradient(
@@ -378,7 +408,6 @@ body {
         grayscale(.75)
         contrast(.9)
         sepia(.08);
-
 }
 
 .photo-note {
@@ -678,6 +707,7 @@ body {
     position: absolute;
 
     right: 45px;
+
     bottom: 105px;
 
     color: var(--red);
@@ -697,7 +727,9 @@ body {
     position: absolute;
 
     left: -8px;
+
     right: -8px;
+
     bottom: 2px;
 
     border-bottom: 2px solid var(--red);
@@ -724,8 +756,20 @@ body {
     }
 
     .appearance {
-        max-width: 300px;
+        width: 100%;
+        max-width: 320px;
+
         margin: auto;
+    }
+
+    .appearance-image {
+        width: 293.49px;
+        max-width: 100%;
+
+        height: 543.73px;
+        max-height: 70vh;
+
+        object-fit: contain;
     }
 
     .data {
@@ -759,6 +803,7 @@ body {
 <main class="file">
 
     <!-- SNOW DAMAGE -->
+
     <div class="snow-damage snow-top"></div>
     <div class="snow-damage snow-left"></div>
     <div class="snow-damage snow-right"></div>
@@ -815,12 +860,11 @@ body {
 
         <aside class="appearance">
 
-  <img
-         class="appearance-image"
-         src="Radegast on Patrol.jpg"
-         alt="Trevor Cardinal — Radegast"
-        >
-            </div>
+            <img
+                class="appearance-image"
+                src="Radegast on Patrol.jpg"
+                alt="Trevor Cardinal — Radegast"
+            >
 
         </aside>
 
@@ -905,19 +949,24 @@ body {
     <section class="section">
 
         <div class="section-header">
+
             <h2>Physical Identification</h2>
+
             <span></span>
+
         </div>
 
         <div class="data">
 
             <div class="label">Tattoos</div>
+
             <div class="value">
                 Raven with rose positioned above a skull on upper left arm;
                 unit tattoo on lower right arm.
             </div>
 
             <div class="label">Body Markings</div>
+
             <div class="value">
                 Vertical scar over right eye; scars extending across upper chest.
             </div>
@@ -934,8 +983,11 @@ body {
     <section class="section">
 
         <div class="section-header">
+
             <h2>Previous History</h2>
+
             <span></span>
+
         </div>
 
         <div class="history">
@@ -996,8 +1048,11 @@ body {
     <section class="section">
 
         <div class="section-header">
+
             <h2>Foundation Training & Service</h2>
+
             <span></span>
+
         </div>
 
         <div class="history">
@@ -1005,8 +1060,8 @@ body {
             <p>
                 During his Foundation training, Radegast quickly established
                 himself as a highly capable operative. His performance resulted
-                in assignment to the <span class="operation">
-                General Security Department</span>.
+                in assignment to the
+                <span class="operation">General Security Department</span>.
             </p>
 
             <p>
@@ -1037,7 +1092,8 @@ body {
             </p>
 
             <p>
-                Upon reaching the rank of <span class="operation">1LT</span>,
+                Upon reaching the rank of
+                <span class="operation">1LT</span>,
                 Radegast received transfer orders to
                 <span class="operation">Site-66</span>.
             </p>
@@ -1059,7 +1115,9 @@ body {
 
     <div class="footnote">
 
-        <strong>HANDWRITTEN NOTE — UNKNOWN AUTHOR:</strong><br><br>
+        <strong>HANDWRITTEN NOTE — UNKNOWN AUTHOR:</strong>
+
+        <br><br>
 
         "He doesn't throw himself into danger because he thinks he's
         invincible. He does it because somebody has to stand between
@@ -1086,7 +1144,11 @@ body {
             href="psychological.html"
         >
             Psychological Profile
-            <small>ACCESS PERSONNEL EVALUATION</small>
+
+            <small>
+                ACCESS PERSONNEL EVALUATION
+            </small>
+
         </a>
 
         <a
@@ -1094,7 +1156,11 @@ body {
             href="relations.html"
         >
             Relations
-            <small>ACCESS ASSOCIATED PERSONNEL</small>
+
+            <small>
+                ACCESS ASSOCIATED PERSONNEL
+            </small>
+
         </a>
 
     </nav>
