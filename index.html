@@ -1,1 +1,1141 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SCP FOUNDATION // PERSONNEL FILE // RADEGAST</title>
+
+<!-- =========================================================
+     SCP FOUNDATION
+     GENERAL SECURITY DEPARTMENT
+     PERSONNEL RECORD — TREVOR CARDINAL
+     
+     FILE CONDITION:
+     RECOVERED / SNOW DAMAGED / PARTIALLY WEATHERED
+========================================================= -->
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Special+Elite&display=swap');
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --paper: #d8d7cc;
+    --paper-dark: #b8b8ad;
+    --paper-shadow: #888b87;
+
+    --ink: #202a2d;
+    --ink-faded: #3c484b;
+    --blue-ink: #263f4a;
+
+    --red: #713b38;
+    --red-faded: #8c6761;
+
+    --snow: #eef2f0;
+    --ice: #c8d8dc;
+
+    --border: #737a78;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 40px 15px;
+
+    background:
+        radial-gradient(circle at 15% 10%, rgba(255,255,255,.35), transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255,255,255,.25), transparent 25%),
+        linear-gradient(135deg, #8c9795, #c4cbc8 45%, #7d8988);
+
+    color: var(--ink);
+
+    font-family: "Special Elite", "Courier New", monospace;
+
+    min-height: 100vh;
+}
+
+/* =========================================================
+   MAIN FILE
+========================================================= */
+
+.file {
+    position: relative;
+
+    width: min(1050px, 96vw);
+    margin: auto;
+
+    padding: 55px 65px 75px;
+
+    background:
+        radial-gradient(ellipse at 15% 5%, rgba(255,255,255,.45), transparent 25%),
+        radial-gradient(ellipse at 85% 95%, rgba(60,75,76,.13), transparent 30%),
+        repeating-linear-gradient(
+            0deg,
+            rgba(70,70,60,.025) 0px,
+            rgba(70,70,60,.025) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        var(--paper);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35),
+        inset 0 0 45px rgba(40,50,50,.18);
+
+    border: 1px solid #737873;
+
+    overflow: hidden;
+
+    transform: rotate(-0.25deg);
+}
+
+/* =========================================================
+   DAMAGED PAPER EDGES
+========================================================= */
+
+.file::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(30,40,40,.18),
+            transparent 4%,
+            transparent 96%,
+            rgba(30,40,40,.18)
+        );
+
+    opacity: .7;
+}
+
+.file::after {
+    content: "";
+
+    position: absolute;
+    left: -10%;
+    right: -10%;
+    bottom: -35px;
+
+    height: 120px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(240,246,246,.85),
+            rgba(210,224,226,.55) 45%,
+            transparent 72%
+        );
+
+    filter: blur(8px);
+
+    opacity: .8;
+
+    pointer-events: none;
+}
+
+/* =========================================================
+   SNOW / ICE DAMAGE
+========================================================= */
+
+.snow-damage {
+    position: absolute;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(244,248,247,.8) 0%,
+            rgba(219,231,232,.65) 35%,
+            rgba(190,207,210,.25) 55%,
+            transparent 70%
+        );
+
+    filter: blur(3px);
+
+    opacity: .85;
+}
+
+.snow-top {
+    top: -35px;
+    left: -5%;
+    width: 110%;
+    height: 115px;
+}
+
+.snow-left {
+    top: 0;
+    left: -45px;
+    width: 90px;
+    height: 65%;
+}
+
+.snow-right {
+    top: 35%;
+    right: -45px;
+    width: 95px;
+    height: 55%;
+}
+
+.snow-bottom {
+    bottom: -50px;
+    left: 15%;
+    width: 80%;
+    height: 110px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: relative;
+    border-bottom: 3px double var(--border);
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+}
+
+.foundation {
+    font-family: "Special Elite", monospace;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--ink-faded);
+}
+
+.classification {
+    float: right;
+
+    color: var(--red);
+    border: 2px solid var(--red);
+    padding: 5px 12px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    transform: rotate(2deg);
+}
+
+.header h1 {
+    margin: 12px 0 0;
+
+    font-family: "Caveat", cursive;
+    font-size: clamp(42px, 7vw, 72px);
+    font-weight: 700;
+
+    color: #263337;
+
+    letter-spacing: 2px;
+
+    transform: rotate(-1deg);
+}
+
+.subtitle {
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    color: var(--blue-ink);
+
+    margin-top: -8px;
+}
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.quote {
+    position: relative;
+
+    margin: 30px 5px 35px;
+    padding: 20px 30px;
+
+    border-left: 5px solid var(--red);
+    border-bottom: 1px dashed var(--border);
+
+    background: rgba(190,198,195,.18);
+
+    transform: rotate(-.5deg);
+}
+
+.quote::before {
+    content: "\"";
+
+    position: absolute;
+    left: 8px;
+    top: -17px;
+
+    font-family: Georgia, serif;
+    font-size: 70px;
+
+    color: var(--red-faded);
+    opacity: .45;
+}
+
+.quote-text {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    line-height: 1.15;
+
+    color: #273c42;
+}
+
+.quote-note {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: "Caveat", cursive;
+    font-size: 18px;
+
+    color: var(--ink-faded);
+
+    transform: rotate(1deg);
+}
+
+/* =========================================================
+   FILE GRID
+========================================================= */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 35px;
+
+    margin-bottom: 35px;
+}
+
+/* =========================================================
+   PHOTOGRAPH / APPEARANCE
+========================================================= */
+
+.appearance {
+    position: relative;
+
+    padding: 12px;
+
+    border: 1px solid #656d6d;
+
+    background: rgba(180,186,181,.35);
+
+    transform: rotate(-1.2deg);
+
+    box-shadow: 3px 4px 0 rgba(60,65,63,.12);
+}
+
+.appearance::before {
+    content: "APPEARANCE / IDENTIFICATION";
+
+    display: block;
+
+    font-family: "Special Elite", monospace;
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+    color: var(--ink-faded);
+}
+
+.appearance-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+
+    display: block;
+
+    object-fit: cover;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8c9694,
+            #c7d0cd,
+            #737d7c
+        );
+
+    border: 1px solid #5d6665;
+
+    filter:
+        grayscale(.75)
+        contrast(.9)
+        sepia(.08);
+
+}
+
+.photo-note {
+    font-family: "Caveat", cursive;
+
+    font-size: 17px;
+
+    color: var(--ink-faded);
+
+    margin-top: 8px;
+
+    transform: rotate(-1deg);
+}
+
+/* =========================================================
+   BASIC IDENTIFICATION
+========================================================= */
+
+.identity {
+    position: relative;
+}
+
+.identity-title {
+    font-family: "Caveat", cursive;
+
+    font-size: 34px;
+
+    border-bottom: 1px solid var(--border);
+
+    margin-bottom: 15px;
+
+    color: #27363a;
+}
+
+.data {
+    display: grid;
+
+    grid-template-columns: 170px 1fr;
+
+    gap: 8px 15px;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+.label {
+    font-weight: bold;
+
+    color: #4d585a;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.value {
+    color: #252e30;
+}
+
+/* =========================================================
+   HANDWRITTEN NOTES
+========================================================= */
+
+.hand-note {
+    font-family: "Caveat", cursive;
+
+    color: var(--blue-ink);
+
+    font-size: 21px;
+
+    margin: 20px 0;
+
+    transform: rotate(-1deg);
+}
+
+.hand-note::before {
+    content: "↳ ";
+}
+
+/* =========================================================
+   SECTION HEADERS
+========================================================= */
+
+.section {
+    margin-top: 35px;
+}
+
+.section-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    margin: 0;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #28383b;
+}
+
+.section-header span {
+    flex: 1;
+
+    border-top: 1px dashed var(--border);
+}
+
+/* =========================================================
+   HISTORY
+========================================================= */
+
+.history {
+    font-family: "Caveat", cursive;
+
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    color: #303b3d;
+
+    padding-left: 18px;
+
+    border-left: 2px solid rgba(65,72,72,.45);
+}
+
+.history p {
+    margin: 0 0 18px;
+}
+
+.operation {
+    color: #293f48;
+
+    font-weight: bold;
+}
+
+.redacted {
+    color: #deded8;
+
+    background: #242b2c;
+
+    padding: 0 6px;
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   FOOTNOTE
+========================================================= */
+
+.footnote {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: 1px dashed var(--border);
+
+    background: rgba(170,178,176,.18);
+
+    font-family: "Caveat", cursive;
+
+    font-size: 19px;
+
+    color: #3c484a;
+
+    transform: rotate(.3deg);
+}
+
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.navigation {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+
+    padding-top: 25px;
+
+    border-top: 2px double var(--border);
+}
+
+.file-button {
+    position: relative;
+
+    display: block;
+
+    padding: 17px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #26363a;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(220,225,221,.7),
+            rgba(175,183,179,.45)
+        );
+
+    border: 1px solid #606967;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+
+    box-shadow:
+        3px 4px 0 rgba(50,55,54,.15);
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        box-shadow .2s ease;
+}
+
+.file-button:hover {
+    transform: rotate(-1deg) translateY(-3px);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(235,240,237,.9),
+            rgba(185,196,193,.7)
+        );
+
+    box-shadow:
+        5px 7px 0 rgba(50,55,54,.18);
+}
+
+.file-button small {
+    display: block;
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-top: 4px;
+
+    opacity: .7;
+}
+
+/* =========================================================
+   FILE FOOTER
+========================================================= */
+
+.footer {
+    margin-top: 45px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #596362;
+}
+
+.footer-warning {
+    color: var(--red);
+
+    font-weight: bold;
+}
+
+/* =========================================================
+   HANDWRITTEN RED MARK
+========================================================= */
+
+.red-mark {
+    position: absolute;
+
+    right: 45px;
+    bottom: 105px;
+
+    color: var(--red);
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+
+    transform: rotate(-8deg);
+
+    opacity: .8;
+}
+
+.red-mark::after {
+    content: "";
+
+    position: absolute;
+
+    left: -8px;
+    right: -8px;
+    bottom: 2px;
+
+    border-bottom: 2px solid var(--red);
+
+    transform: rotate(-2deg);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .file {
+        padding: 35px 25px 55px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appearance {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .data {
+        grid-template-columns: 135px 1fr;
+    }
+
+    .navigation {
+        grid-template-columns: 1fr;
+    }
+
+    .classification {
+        float: none;
+
+        display: inline-block;
+
+        margin-top: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="file">
+
+    <!-- SNOW DAMAGE -->
+    <div class="snow-damage snow-top"></div>
+    <div class="snow-damage snow-left"></div>
+    <div class="snow-damage snow-right"></div>
+    <div class="snow-damage snow-bottom"></div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <span class="foundation">
+            SCP FOUNDATION // GENERAL SECURITY DEPARTMENT
+        </span>
+
+        <span class="classification">
+            LEVEL 3 // RESTRICTED
+        </span>
+
+        <h1>Trevor Cardinal</h1>
+
+        <div class="subtitle">
+            Personnel Record // Callsign: "Radegast"
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         PRIMARY DIRECTIVE / QUOTE
+    ====================================================== -->
+
+    <section class="quote">
+
+        <div class="quote-text">
+            "Mercy to an enemy cannot come at the cost of mercy for their victims."
+        </div>
+
+        <span class="quote-note">
+            — Radegast // recorded statement during personnel evaluation
+        </span>
+
+    </section>
+
+
+    <!-- =====================================================
+         IDENTIFICATION
+    ====================================================== -->
+
+    <section class="profile-grid">
+
+        <!-- APPEARANCE -->
+
+        <aside class="appearance">
+
+                  <img
+    class="appearance-image"
+    src="Radegast.png"
+    alt="Trevor Cardinal — Radegast"
+>
+            >
+
+            <div class="photo-note">
+                [ Photograph pending replacement ]
+            </div>
+
+        </aside>
+
+
+        <!-- BASIC INFORMATION -->
+
+        <section class="identity">
+
+            <div class="identity-title">
+                General Identification
+            </div>
+
+            <div class="data">
+
+                <div class="label">Callsign</div>
+                <div class="value">'Radegast'</div>
+
+                <div class="label">Real Name</div>
+                <div class="value">Trevor Cardinal</div>
+
+                <div class="label">Sex</div>
+                <div class="value">Male</div>
+
+                <div class="label">Age</div>
+                <div class="value">54</div>
+
+                <div class="label">Date of Birth</div>
+                <div class="value">07-24-1972</div>
+
+                <div class="label">Clearance</div>
+                <div class="value">Level 3</div>
+
+                <div class="label">Occupation</div>
+                <div class="value">
+                    General Security Department Leadership
+                </div>
+
+                <div class="label">Origin Country</div>
+                <div class="value">Canada</div>
+
+                <div class="label">Hair</div>
+                <div class="value">Black</div>
+
+                <div class="label">Eyes</div>
+                <div class="value">Light Blue</div>
+
+                <div class="label">Height</div>
+                <div class="value">6'3" / 192 cm</div>
+
+                <div class="label">Weight</div>
+                <div class="value">230 lbs</div>
+
+                <div class="label">Blood Type</div>
+                <div class="value">O NEG</div>
+
+                <div class="label">Previous Occupation</div>
+                <div class="value">
+                    Canadian Armed Forces Member
+                </div>
+
+                <div class="label">Current Assignment</div>
+                <div class="value">
+                    Site-66 // General Security Department
+                </div>
+
+            </div>
+
+            <div class="hand-note">
+                Personnel noted for repeatedly accepting direct-risk
+                assignments in order to facilitate team extraction.
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- =====================================================
+         PHYSICAL IDENTIFICATION
+    ====================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+            <h2>Physical Identification</h2>
+            <span></span>
+        </div>
+
+        <div class="data">
+
+            <div class="label">Tattoos</div>
+            <div class="value">
+                Raven with rose positioned above a skull on upper left arm;
+                unit tattoo on lower right arm.
+            </div>
+
+            <div class="label">Body Markings</div>
+            <div class="value">
+                Vertical scar over right eye; scars extending across upper chest.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PREVIOUS HISTORY
+    ====================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+            <h2>Previous History</h2>
+            <span></span>
+        </div>
+
+        <div class="history">
+
+            <p>
+                Before training as a SCP Foundation General Security Operative,
+                Radegast underwent training as a member of the
+                <span class="operation">Canadian Armed Forces</span>.
+                He subsequently specialized in cold-warfare operations,
+                eventually becoming a trainer for the CWO Course held during
+                <span class="operation">NOREX</span>.
+            </p>
+
+            <p>
+                Radegast served as a team leader during
+                <span class="operation">OPERATION NANOOK-NUNALIVUT</span>.
+                Following completion of the operation, he was transferred to
+                <span class="operation">OPERATION BOXTOP</span>, and subsequently
+                assigned to <span class="operation">JTFN
+                (Joint Task Force North)</span> for participation in
+                <span class="operation">OPERATION LIMPID</span>.
+            </p>
+
+            <p>
+                During Operation LIMPID, Radegast's unit encountered a hostile
+                entity later identified as
+                <span class="redacted">[REDACTED]</span>.
+            </p>
+
+            <p>
+                Following termination of the entity, an individual within the
+                Canadian Armed Forces took note of Radegast's performance,
+                specifically his willingness to place himself in direct danger
+                to ensure the survival of his team.
+            </p>
+
+            <p>
+                Radegast remained behind to hold off the
+                <span class="redacted">[REDACTED]</span>
+                while the remainder of his team successfully extracted.
+            </p>
+
+            <p>
+                Shortly afterward, he was officially discharged from the
+                Canadian Armed Forces and transferred to another facility,
+                where he began training as a Foundation operative.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOUNDATION TRAINING
+    ====================================================== -->
+
+    <section class="section">
+
+        <div class="section-header">
+            <h2>Foundation Training & Service</h2>
+            <span></span>
+        </div>
+
+        <div class="history">
+
+            <p>
+                During his Foundation training, Radegast quickly established
+                himself as a highly capable operative. His performance resulted
+                in assignment to the <span class="operation">
+                General Security Department</span>.
+            </p>
+
+            <p>
+                He progressed through the ranks while becoming increasingly
+                recognized by his superiors for his repeated willingness to
+                place himself at risk in order to ensure the safety of
+                personnel operating alongside him.
+            </p>
+
+            <p>
+                When questioned regarding this behavior, Radegast responded:
+            </p>
+
+            <p style="
+                margin-left: 25px;
+                color: #263f4a;
+                font-size: 25px;
+                transform: rotate(-1deg);
+            ">
+                "To Not become like those we fight."
+            </p>
+
+            <p>
+                Radegast eventually reached the rank of
+                <span class="operation">MSGT</span> and selected the callsign
+                <span class="operation">'Radegast'</span>, a name traditionally
+                associated with the concept of a protector.
+            </p>
+
+            <p>
+                Upon reaching the rank of <span class="operation">1LT</span>,
+                Radegast received transfer orders to
+                <span class="operation">Site-66</span>.
+            </p>
+
+            <p>
+                Upon arrival, he was formally assigned to the
+                <span class="operation">Site-66 General Security Department</span>,
+                where he currently serves in a leadership capacity.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMMAND NOTE
+    ====================================================== -->
+
+    <div class="footnote">
+
+        <strong>HANDWRITTEN NOTE — UNKNOWN AUTHOR:</strong><br><br>
+
+        "He doesn't throw himself into danger because he thinks he's
+        invincible. He does it because somebody has to stand between
+        the danger and the people behind him."
+
+        <br><br>
+
+        <span style="font-size:15px;">
+            — Source unclear. Ink appears significantly newer than
+            surrounding documentation.
+        </span>
+
+    </div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navigation">
+
+        <a
+            class="file-button"
+            href="psychological.html"
+        >
+            Psychological Profile
+            <small>ACCESS PERSONNEL EVALUATION</small>
+        </a>
+
+        <a
+            class="file-button"
+            href="relations.html"
+        >
+            Relations
+            <small>ACCESS ASSOCIATED PERSONNEL</small>
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         RED STAMP
+    ====================================================== -->
+
+    <div class="red-mark">
+        DO NOT LOSE THIS FILE
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <span>
+            SCP FOUNDATION // SITE-66 // GENSEC
+        </span>
+
+        <span class="footer-warning">
+            UNAUTHORIZED DUPLICATION PROHIBITED
+        </span>
+
+        <span>
+            FILE REF: GENSEC-66-CARDINAL-R
+        </span>
+
+    </footer>
+
+</main>
+
+</body>
+</html>
+```
